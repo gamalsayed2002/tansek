@@ -39,19 +39,30 @@
   justify-content: center;
   cursor: pointer;
 }
-.header nav ul li a:last-child {
+.header nav ul li:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
   position: relative;
+  cursor: pointer;
 }
-.header nav ul li a:last-child:hover div {
+.header nav ul li:last-child span {
+  color: whitesmoke;
+  font-weight: 550;
+  font-size: 17px;
+  height: var(--nav_height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.header nav ul li:last-child:hover div {
   bottom: -250px;
   opacity: 1;
   transform: scaleY(1);
 }
-.header nav ul li a:last-child div {
+.header nav ul li:last-child div {
   transition: 0.2s;
   position: absolute;
   background-color: var(--header-bg);
@@ -62,7 +73,7 @@
   width: 250px;
   border-radius: 0px 0px 5px 5px;
 }
-.header nav ul li a:last-child div ul {
+.header nav ul li:last-child div ul {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -71,14 +82,14 @@
 
   color: rgba(0, 0, 0, 0.546);
 }
-.header nav ul li a:last-child div ul li {
+.header nav ul li:last-child div ul li {
   height: 20px;
 }
-.header nav ul li a:last-child div ul li a {
+.header nav ul li:last-child div ul li a {
   transition: 0.5s;
   color: rgba(0, 0, 0, 0.448);
 }
-.header nav ul li a:last-child div ul li a:hover {
+.header nav ul li:last-child div ul li a:hover {
   color: rgb(0, 0, 0);
   padding-right: 5px;
 }
@@ -143,7 +154,7 @@
     padding-right: 5px;
   }
   /* more */
-  .header nav ul li a:last-child div {
+  .header nav ul li:last-child div {
     transform: scaleY(1);
     transform: scaleX(0);
 
@@ -151,12 +162,11 @@
     bottom: -190px !important;
     background-color: transparent;
   }
-  .header nav ul li a:last-child div ul li {
+  .header nav ul li:last-child div ul li {
     height: 30px;
   }
-  .header nav ul li a:last-child:hover div {
+  .header nav ul li:last-child:hover div {
     bottom: -190px !important;
     transform: scaleX(1);
-
   }
 }

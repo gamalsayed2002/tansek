@@ -11,7 +11,6 @@ import { RiMenu5Line } from "react-icons/ri";
 import { IoMdArrowDropdown } from "react-icons/io";
 export default function Nav() {
   const navRef = useRef();
-
   // res nav
   const showNav = () => {
     navRef.current.classList.toggle(`${styles.res_nav}`);
@@ -40,8 +39,8 @@ export default function Nav() {
             <Link to="">تصميم نوافير</Link>
           </li>
           <li>
-            <a href="/">
-              {" "}
+            <span>
+         
               <IoMdArrowDropdown /> المزيد
               <div>
                 <ul>
@@ -65,7 +64,7 @@ export default function Nav() {
                   </li>
                 </ul>
               </div>
-            </a>
+            </span>
           </li>
         </ul>
       </nav>
