@@ -1,5 +1,5 @@
 // link;
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 // styles
 import styles from "./nav.module.css";
 // imgs
@@ -40,7 +40,7 @@ export default function Nav() {
             <Link to="">تصميم نوافير</Link>
           </li>
           <li>
-            <a>
+            <a href="/">
               {" "}
               <IoMdArrowDropdown /> المزيد
               <div>
